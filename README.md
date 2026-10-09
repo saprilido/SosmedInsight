@@ -17,8 +17,8 @@ kecuali jika Anda sendiri memakai API key Gemini untuk membaca gambar/PDF.
 2. Klik **Pilih File** dan pilih satu atau banyak file sekaligus.
 3. Pilih periode lewat kalender di bagian atas.
 
-Belum punya data? Pakai `template/template-socmed-insight.csv` atau contoh di `contoh-data/`.
-Detail format ada di [docs/panduan-data.md](docs/panduan-data.md).
+Belum punya data? Pakai `template-socmed-insight.csv` atau contoh `contoh-konten-sep2026.csv` dan `contoh-metrik-akun.csv`.
+Detail format ada di [panduan-data.md](panduan-data.md).
 
 ## Membaca selisih di halaman Komparasi
 Kolom kiri = periode aktif, kolom kanan = "Bandingkan dengan".
@@ -31,20 +31,19 @@ Hanya diperlukan untuk membaca screenshot/PDF. Klik **API Key Gemini** di sideba
 - Jangan pernah menaruh key di file di repo ini.
 
 ## Publikasi lewat GitHub Pages
-1. Buat repo baru, upload semua isi folder ini.
-2. Settings → Pages → Source: **GitHub Actions** (workflow sudah ada di `.github/workflows/pages.yml`).
-3. Tunggu workflow selesai; alamat situs tampil di halaman Pages.
+1. Upload semua file di repo ini ke branch `main`.
+2. Settings → Pages → Source: **Deploy from a branch**, Branch: `main`, folder `/ (root)`, lalu Save.
+3. Tunggu 1–2 menit; alamat situs tampil di halaman Pages.
 
-Repo publik berarti `index.html` dan contoh data terbuka untuk umum. Jangan upload data asli akun
-(folder `data-asli/` sudah diabaikan oleh `.gitignore`).
+Repo publik berarti `index.html` dan contoh data terbuka untuk umum. Jangan upload data asli akun.
 
 ## Struktur
 ```
-index.html                     dashboard (satu file)
-template/                      template CSV satu file
-contoh-data/                   contoh CSV (data dari screenshot, sebagian dibulatkan)
-docs/panduan-data.md           format data yang dikenali
-.github/workflows/pages.yml    deploy otomatis ke GitHub Pages
+index.html                      dashboard (satu file)
+template-socmed-insight.csv     template CSV satu file
+contoh-konten-sep2026.csv       contoh data konten (fiktif)
+contoh-metrik-akun.csv          contoh ringkasan akun (fiktif)
+panduan-data.md                 format data yang dikenali
 ```
 
 ---
