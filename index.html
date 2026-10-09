@@ -386,28 +386,171 @@ var inter = function (c) { return (c.likes || 0) + (c.comments || 0) + (c.repost
 
 /* ---------- sample data (from the attached reports) ---------- */
 function sampleData() {
+  /* Data CONTOH FIKTIF (bukan data akun asli). Dipakai saat belum ada file yang diunggah. */
   return [
-    { id: 'p-aug', label: '14–31 Agu 2026', short: '14–31 Agu', start: '2026-08-14', end: '2026-08-31',
-      account: { views: 26162, audience: 2972, interactions: 753, followersTotal: 123626, netFollowers: -178, profileVisits: 606, linkClicks: 35, nonFollowerPct: 11.4,
-        viewsByType: { postingan: 13000, reel: 4400, story: 8400 }, erByType: { postingan: 2.7, reel: 3.8, story: 2.8 } },
+    { id: 'p-aug', label: '1–31 Agu 2026', short: '1–31 Agu', start: '2026-08-01', end: '2026-08-31',
+      account: { views: 268000, audience: 121000, interactions: 39000, followersTotal: 46560, netFollowers: 1180, profileVisits: 12900, linkClicks: 880, nonFollowerPct: 37.2,
+        viewsByType: { postingan: 124000, reel: 98000, story: 46000 }, erByType: { postingan: 12.1, reel: 15.8, story: 7.4 } },
       contents: [] },
-    { id: 'p-sep', label: '1–18 Sep 2026', short: '1–18 Sep', start: '2026-09-01', end: '2026-09-18',
-      account: { views: 68124, audience: 9342, interactions: 10761, followersTotal: 123628, netFollowers: 61, profileVisits: 1791, linkClicks: 70, nonFollowerPct: 23.8,
-        viewsByType: { postingan: 40000, reel: 15000, story: 12000 }, erByType: { postingan: 18.5, reel: 16.0, story: 7.9 } },
+    { id: 'p-sep', label: '1–30 Sep 2026', short: '1–30 Sep', start: '2026-09-01', end: '2026-09-30',
+      account: { views: 620000, audience: 151000, interactions: 112000, followersTotal: 48900, netFollowers: 2340, profileVisits: 18400, linkClicks: 1260, nonFollowerPct: 41.5,
+        viewsByType: { postingan: 228000, reel: 296000, story: 96000 }, erByType: { postingan: 13.8, reel: 19.4, story: 9.1 } },
       contents: [
-        { title: 'Reel: Pakaian abu vulkanik', type: 'reel', category: 'organic', views: 2300 },
-        { title: "80's – Blouse 14004", category: 'organic', views: 2100 },
-        { title: 'Satu blouse, dua gaya', category: 'organic', views: 1500 },
-        { title: 'Tiga blouse, tiga mood', category: 'organic', views: 1500 },
-        { title: 'Satu blouse, tiga mood', category: 'organic', views: 1500 },
-        { title: 'Satu blouse, beda styling', category: 'organic', views: 1400 },
-        { title: 'Satu blouse, empat style', category: 'organic', views: 1400 },
-        { title: 'Setiap Raya punya war…', category: 'organic', views: 1300 },
-        { title: 'Giveaway Alert', category: 'giveaway', views: 8100, likes: 346, comments: 2300, reposts: 48, shares: 401, newFollowers: 114 },
-        { title: 'Quiz Alert', category: 'quiz', views: 7400, likes: 323, comments: 220, reposts: 59, shares: 385, newFollowers: 90 },
-        { title: 'Giveaway Match The Shade', category: 'game', views: 3100, likes: 159, comments: 78, reposts: 31, shares: 111, newFollowers: 13 },
-        { title: 'Winner Announcement', category: 'winner', views: 1800, likes: 137, comments: 15, reposts: 6, shares: 4, newFollowers: 2 }
-      ] }
+          {
+            title: "Satu blouse, 5 gaya dalam 1 menit ✨",
+            type: "reel",
+            category: "organic",
+            views: 38400,
+            likes: 6180,
+            comments: 915,
+            reposts: 360,
+            shares: 2970,
+            newFollowers: 0
+          },
+          {
+            title: "Padu padan warna netral untuk kerja",
+            type: "postingan",
+            category: "organic",
+            views: 31200,
+            likes: 5070,
+            comments: 720,
+            reposts: 285,
+            shares: 2475,
+            newFollowers: 0
+          },
+          {
+            title: "Di balik proses jahit koleksi terbaru",
+            type: "reel",
+            category: "organic",
+            views: 29800,
+            likes: 4515,
+            comments: 630,
+            reposts: 240,
+            shares: 2085,
+            newFollowers: 0
+          },
+          {
+            title: "Katalog Lebaran dalam warna pastel",
+            type: "postingan",
+            category: "organic",
+            views: 27500,
+            likes: 4305,
+            comments: 585,
+            reposts: 225,
+            shares: 1920,
+            newFollowers: 0
+          },
+          {
+            title: "Review pelanggan minggu ini ⭐⭐⭐⭐⭐",
+            type: "postingan",
+            category: "organic",
+            views: 22400,
+            likes: 3180,
+            comments: 465,
+            reposts: 165,
+            shares: 1410,
+            newFollowers: 0
+          },
+          {
+            title: "Outfit akhir pekan yang santai",
+            type: "reel",
+            category: "organic",
+            views: 19600,
+            likes: 2670,
+            comments: 360,
+            reposts: 135,
+            shares: 1140,
+            newFollowers: 0
+          },
+          {
+            title: "Tips memilih bahan yang adem",
+            type: "reel",
+            category: "organic",
+            views: 18300,
+            likes: 2460,
+            comments: 330,
+            reposts: 128,
+            shares: 1050,
+            newFollowers: 0
+          },
+          {
+            title: "Koleksi baru dirilis, stok terbatas",
+            type: "postingan",
+            category: "organic",
+            views: 16900,
+            likes: 2265,
+            comments: 308,
+            reposts: 120,
+            shares: 975,
+            newFollowers: 0
+          },
+          {
+            title: "Behind the scene sesi foto",
+            type: "reel",
+            category: "organic",
+            views: 15400,
+            likes: 2085,
+            comments: 285,
+            reposts: 105,
+            shares: 900,
+            newFollowers: 0
+          },
+          {
+            title: "Cara menyimpan hijab agar tidak kusut",
+            type: "postingan",
+            category: "organic",
+            views: 13700,
+            likes: 1830,
+            comments: 255,
+            reposts: 90,
+            shares: 780,
+            newFollowers: 0
+          },
+          {
+            title: "Giveaway: Tebak Kata Berhadiah 🎁",
+            type: "postingan",
+            category: "giveaway",
+            views: 118000,
+            likes: 9800,
+            comments: 7400,
+            reposts: 620,
+            shares: 4100,
+            newFollowers: 2180
+          },
+          {
+            title: "Kuis Seru: Tebak Warna Favoritmu",
+            type: "postingan",
+            category: "quiz",
+            views: 96500,
+            likes: 8400,
+            comments: 6100,
+            reposts: 540,
+            shares: 3300,
+            newFollowers: 1640
+          },
+          {
+            title: "Game: Pilih Pasangan Warna",
+            type: "postingan",
+            category: "game",
+            views: 74000,
+            likes: 6200,
+            comments: 4800,
+            reposts: 380,
+            shares: 2100,
+            newFollowers: 920
+          },
+          {
+            title: "Pengumuman Pemenang Giveaway",
+            type: "story",
+            category: "winner",
+            views: 21000,
+            likes: 1450,
+            comments: 310,
+            reposts: 60,
+            shares: 540,
+            newFollowers: 210
+          }
+        ] }
   ];
 }
 
@@ -1540,7 +1683,7 @@ if($('#pdfConfirm')) $('#pdfConfirm').addEventListener('click', async function (
 });
 
 /* offline / standalone: template via normal browser download */
-var TPL = 'periode,tanggal,judul,url,platform,jenis,kategori,tayangan,likes,komentar,repost,share,simpan,pengikut_baru,audience,interaksi_akun,total_pengikut,pengikut_bersih,kunjungan_profil,klik_tautan_bio,views_nonpengikut,tayangan_postingan,tayangan_reel,tayangan_story,er_postingan,er_reel,er_story\n1–15 Sep 2026,,,,,,,55681,,,,,,,18000,9000,123663,73,1500,60,76.2,30000,15000,10681,,,\n1–15 Sep 2026,2026-09-03,Contoh konten organik,https://www.instagram.com/p/XXXXXXXX/,instagram,reel,organik,2300,120,14,5,22,18,,,,,,,,,,,,,,\n1–15 Sep 2026,2026-09-08,Giveaway Alert,https://www.instagram.com/p/YYYYYYYY/,instagram,postingan,giveaway,8100,346,2300,48,401,0,114,,,,,,,,,,,,,\n1–15 Sep 2026,2026-09-12,Quiz Alert,https://www.instagram.com/p/ZZZZZZZZ/,instagram,postingan,quiz,7400,323,220,59,385,0,90,,,,,,,,,,,,,\n16–30 Sep 2026,,,,,,,77207,,,,,,,,,123663,18,1359,53,,,,,,,\n16–30 Sep 2026,2026-09-20,Contoh konten organik 2,https://www.instagram.com/p/AAAAAAAA/,instagram,postingan,organik,1500,100,30,6,26,12,,,,,,,,,,,,,,\n';
+var TPL = 'periode,tanggal,judul,url,platform,jenis,kategori,tayangan,likes,komentar,repost,share,simpan,pengikut_baru,audience,interaksi_akun,total_pengikut,pengikut_bersih,kunjungan_profil,klik_tautan_bio,views_nonpengikut,tayangan_postingan,tayangan_reel,tayangan_story,er_postingan,er_reel,er_story\n1–15 Sep 2026,,,,,,,55681,,,,,,,18000,9000,123663,73,1500,60,76.2,30000,15000,10681,,,\n1–15 Sep 2026,2026-09-03,Contoh konten organik,https://www.instagram.com/p/XXXXXXXX/,instagram,reel,organik,2300,120,14,5,22,18,,,,,,,,,,,,,,\n1–15 Sep 2026,2026-09-08,Giveaway Contoh,https://www.instagram.com/p/YYYYYYYY/,instagram,postingan,giveaway,8100,346,2300,48,401,0,114,,,,,,,,,,,,,\n1–15 Sep 2026,2026-09-12,Quiz Alert,https://www.instagram.com/p/ZZZZZZZZ/,instagram,postingan,quiz,7400,323,220,59,385,0,90,,,,,,,,,,,,,\n16–30 Sep 2026,,,,,,,77207,,,,,,,,,123663,18,1359,53,,,,,,,\n16–30 Sep 2026,2026-09-20,Contoh konten organik 2,https://www.instagram.com/p/AAAAAAAA/,instagram,postingan,organik,1500,100,30,6,26,12,,,,,,,,,,,,,,\n';
 if (!window.claude) { var tb = $('#tplBtn'); if(tb) { tb.hidden = false; tb.onclick = function () { var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['\uFEFF' + TPL], { type: 'text/csv' })); a.download = 'template-socmed-insight.csv'; document.body.appendChild(a); a.click(); a.remove(); }; } }
 /* capabilities: light up when available */
 if (window.claude && window.claude.use) {
